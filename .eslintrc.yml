@@ -1,0 +1,8 @@
+extends:
+  - pegasus
+
+plugins:
+  - file-progress
+
+rules:
+  file-progress/activate: 1
