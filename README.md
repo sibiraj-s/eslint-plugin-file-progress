@@ -26,4 +26,6 @@ rules:
 
 ### Demo
 
+¯\\\_(ツ)_/¯ No one likes a silent console 
+
 ![Progress](assets/progress.gif)
