@@ -23,3 +23,7 @@ plugins:
 rules:
   file-progress/activate: 1
 ```
+
+### Demo
+
+![Progress](assets/progress.gif)
