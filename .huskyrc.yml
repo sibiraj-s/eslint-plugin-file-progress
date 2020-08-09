@@ -1,2 +1,3 @@
 hooks:
-  pre-commit: yarn lint
+  pre-commit: yarn test
+  pre-push: yarn lint
