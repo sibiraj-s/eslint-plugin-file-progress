@@ -3,7 +3,6 @@ const cliSpinners = require('cli-spinners');
 
 const spinner = ora({
   spinner: cliSpinners.line,
-  interval: 10 * 1000,
 });
 
 let bindExit = false;
