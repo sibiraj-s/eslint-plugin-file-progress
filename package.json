@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
+    "prepublishOnly": "yarn test",
     "test": "jest"
   },
   "peerDependencies": {
