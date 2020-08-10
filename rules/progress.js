@@ -1,9 +1,8 @@
 const ora = require('ora');
-const cliSpinners = require('cli-spinners');
 const chalk = require('chalk');
 
 const spinner = ora({
-  spinner: cliSpinners.line,
+  spinner: 'line',
 });
 
 let bindExit = false;

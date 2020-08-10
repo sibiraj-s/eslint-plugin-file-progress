@@ -16,7 +16,8 @@
     "progress"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "rules/"
   ],
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
@@ -27,7 +28,6 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "cli-spinners": "^2.4.0",
     "ora": "^5.0.0"
   },
   "devDependencies": {
