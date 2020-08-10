@@ -26,6 +26,7 @@
     "eslint": "^7.0.0"
   },
   "dependencies": {
+    "chalk": "^4.1.0",
     "cli-spinners": "^2.4.0",
     "ora": "^5.0.0"
   },

@@ -38,6 +38,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:14.0.27"
       ],
       [
+        "chalk",
+        "npm:4.1.0"
+      ],
+      [
         "cli-spinners",
         "npm:2.4.0"
       ],
@@ -75,6 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/jest", "npm:26.0.9"],
             ["@types/node", "npm:14.0.27"],
+            ["chalk", "npm:4.1.0"],
             ["cli-spinners", "npm:2.4.0"],
             ["eslint", "npm:7.6.0"],
             ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"],
@@ -2154,6 +2159,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-file-progress", "workspace:."],
             ["@types/jest", "npm:26.0.9"],
             ["@types/node", "npm:14.0.27"],
+            ["chalk", "npm:4.1.0"],
             ["cli-spinners", "npm:2.4.0"],
             ["eslint", "npm:7.6.0"],
             ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"],

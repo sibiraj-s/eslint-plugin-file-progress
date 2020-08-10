@@ -1,5 +1,6 @@
 const ora = require('ora');
 const cliSpinners = require('cli-spinners');
+const chalk = require('chalk');
 
 const spinner = ora({
   spinner: cliSpinners.line,
@@ -26,7 +27,7 @@ const progress = {
     const filename = context.getFilename();
     const relativeFilePath = filename.replace(rootPath, '');
 
-    spinner.text = 'Processing: ' + relativeFilePath + '\n';
+    spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
     spinner.render();
 
     return {};
