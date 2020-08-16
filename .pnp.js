@@ -43,11 +43,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "eslint",
-        "npm:7.6.0"
+        "npm:7.7.0"
       ],
       [
         "eslint-config-pegasus",
-        "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"
+        "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"
       ],
       [
         "husky",
@@ -76,8 +76,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.9"],
             ["@types/node", "npm:14.0.27"],
             ["chalk", "npm:4.1.0"],
-            ["eslint", "npm:7.6.0"],
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"],
+            ["eslint", "npm:7.7.0"],
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
             ["husky", "npm:4.2.5"],
             ["jest", "npm:26.2.2"],
             ["ora", "npm:5.0.0"],
@@ -110,7 +110,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/traverse", "npm:7.11.0"],
             ["@babel/types", "npm:7.11.0"],
             ["convert-source-map", "npm:1.7.0"],
-            ["debug", "virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0"],
+            ["debug", "virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0"],
             ["gensync", "npm:1.0.0-beta.1"],
             ["json5", "npm:2.1.3"],
             ["lodash", "npm:4.17.19"],
@@ -463,7 +463,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-split-export-declaration", "npm:7.11.0"],
             ["@babel/parser", "npm:7.11.3"],
             ["@babel/types", "npm:7.11.0"],
-            ["debug", "virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0"],
+            ["debug", "virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0"],
             ["globals", "npm:11.12.0"],
             ["lodash", "npm:4.17.19"]
           ],
@@ -1690,6 +1690,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["confusing-browser-globals", [
+        ["npm:1.0.9", {
+          "packageLocation": "./.yarn/cache/confusing-browser-globals-npm-1.0.9-c5c9ec32d2-319e6d1538.zip/node_modules/confusing-browser-globals/",
+          "packageDependencies": [
+            ["confusing-browser-globals", "npm:1.0.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["console-control-strings", [
         ["npm:1.1.0", {
           "packageLocation": "./.yarn/cache/console-control-strings-npm-1.1.0-e3160e5275-58a404d951.zip/node_modules/console-control-strings/",
@@ -1826,10 +1835,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0", {
-          "packageLocation": "./.yarn/$$virtual/debug-virtual-e7c7f1dffd/0/cache/debug-npm-4.2.0-9392baba7e-dcfb8ede26.zip/node_modules/debug/",
+        ["virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0", {
+          "packageLocation": "./.yarn/$$virtual/debug-virtual-84700a49fc/0/cache/debug-npm-4.2.0-9392baba7e-dcfb8ede26.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0"],
+            ["debug", "virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0"],
             ["ms", "npm:2.1.2"],
             ["supports-color", null]
           ],
@@ -2090,15 +2099,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint", [
-        ["npm:7.6.0", {
-          "packageLocation": "./.yarn/cache/eslint-npm-7.6.0-5cb6d399f2-1b73da2423.zip/node_modules/eslint/",
+        ["npm:7.7.0", {
+          "packageLocation": "./.yarn/cache/eslint-npm-7.7.0-c99ad1b146-6f47e20ec6.zip/node_modules/eslint/",
           "packageDependencies": [
-            ["eslint", "npm:7.6.0"],
+            ["eslint", "npm:7.7.0"],
             ["@babel/code-frame", "npm:7.10.4"],
             ["ajv", "npm:6.12.3"],
             ["chalk", "npm:4.1.0"],
             ["cross-spawn", "npm:7.0.3"],
-            ["debug", "virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0"],
+            ["debug", "virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0"],
             ["doctrine", "npm:3.0.0"],
             ["enquirer", "npm:2.3.6"],
             ["eslint-scope", "npm:5.1.0"],
@@ -2135,11 +2144,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint-config-pegasus", [
-        ["virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-pegasus-virtual-b47b86c345/0/cache/eslint-config-pegasus-npm-1.2.0-4bafe262eb-dace9b6dcf.zip/node_modules/eslint-config-pegasus/",
+        ["virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1", {
+          "packageLocation": "./.yarn/$$virtual/eslint-config-pegasus-virtual-217eadcc58/0/cache/eslint-config-pegasus-npm-1.3.1-8be9d062f1-28ee67f851.zip/node_modules/eslint-config-pegasus/",
           "packageDependencies": [
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"],
-            ["eslint", "npm:7.6.0"]
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
+            ["confusing-browser-globals", "npm:1.0.9"],
+            ["eslint", "npm:7.7.0"]
           ],
           "packagePeers": [
             "eslint"
@@ -2155,8 +2165,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:26.0.9"],
             ["@types/node", "npm:14.0.27"],
             ["chalk", "npm:4.1.0"],
-            ["eslint", "npm:7.6.0"],
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.2.0"],
+            ["eslint", "npm:7.7.0"],
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
             ["husky", "npm:4.2.5"],
             ["jest", "npm:26.2.2"],
             ["ora", "npm:5.0.0"],
@@ -3293,7 +3303,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/istanbul-lib-source-maps-npm-4.0.0-def3895674-018b5feeb4.zip/node_modules/istanbul-lib-source-maps/",
           "packageDependencies": [
             ["istanbul-lib-source-maps", "npm:4.0.0"],
-            ["debug", "virtual:5cb6d399f233b4892ac3de92971bcdf8baa95d4768c9d1f4a6299b425d40b16d840672d86b247ce1eb4cd4cdfc7af574ce0d030ea1b2e4a914a48d199cc37373#npm:4.2.0"],
+            ["debug", "virtual:c99ad1b1464ecba14b8cb9966f463455ac77e0b5c1674e2614e53cc9e93f50de29502603ea8094f28b5a6580090db437d397df5ea1ec232fa7feb71631849cbb#npm:4.2.0"],
             ["istanbul-lib-coverage", "npm:3.0.0"],
             ["source-map", "npm:0.6.1"]
           ],

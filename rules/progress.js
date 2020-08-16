@@ -13,24 +13,26 @@ const exitCallback = (exitCode) => {
   }
 };
 
-const rootPath = process.cwd() + '/';
+const rootPath = `${process.cwd()}/`;
+
+const create = (context) => {
+  if (!bindExit) {
+    process.on('exit', exitCallback);
+    bindExit = true;
+  }
+
+  const filename = context.getFilename();
+  const relativeFilePath = filename.replace(rootPath, '');
+
+  spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
+  spinner.render();
+
+  return {};
+};
 
 const progress = {
   name: __filename,
-  create: function (context) {
-    if (!bindExit) {
-      process.on('exit', exitCallback);
-      bindExit = true;
-    }
-
-    const filename = context.getFilename();
-    const relativeFilePath = filename.replace(rootPath, '');
-
-    spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
-    spinner.render();
-
-    return {};
-  },
+  create,
 };
 
 module.exports = progress;

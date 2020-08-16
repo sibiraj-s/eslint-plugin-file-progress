@@ -6,3 +6,6 @@ plugins:
 
 rules:
   file-progress/activate: 1
+
+env:
+  node: true
