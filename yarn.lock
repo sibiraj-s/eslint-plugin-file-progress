@@ -713,10 +713,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.0.27":
+"@types/node@npm:*":
   version: 14.0.27
   resolution: "@types/node@npm:14.0.27"
   checksum: 54ecf408eb94f44685e12ef395d8d9d5789cb9e209f171153b6b951272af6b8da099778d09d66454aa5d35ce246f3922ebd7476ed768bf3bd4267306c12a6703
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^14.6.0":
+  version: 14.6.0
+  resolution: "@types/node@npm:14.6.0"
+  checksum: ff23553ab77516d0f90b6710a041a49723fc1b1ca33a5379d5746068cac8b9ddbec428d3a4913afaee50bcdc69b9583843740a18a3519ae997982694f5287c6b
   languageName: node
   linkType: hard
 
@@ -1790,14 +1797,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-pegasus@npm:^1.3.1":
-  version: 1.3.1
-  resolution: "eslint-config-pegasus@npm:1.3.1"
+"eslint-config-pegasus@npm:^1.3.6":
+  version: 1.3.6
+  resolution: "eslint-config-pegasus@npm:1.3.6"
   dependencies:
     confusing-browser-globals: ^1.0.9
   peerDependencies:
     eslint: ^7.0.0
-  checksum: 28ee67f851f48d2c73b81a38ac56b7ead743d6ba630ef004ed3c0331c7902cf5ca12320d922b29b1dc29d40ebaef700b81e5205bb75d92e20d6a09524238f963
+  checksum: a9512f03c7c7335460251bf44aca3afb220771381fd31a56405f8f70fd3b1fba613cdf2b019d08bb6e6f573f098cd616142609727cec3488d3fa481d9b732994
   languageName: node
   linkType: hard
 
@@ -1806,10 +1813,10 @@ __metadata:
   resolution: "eslint-plugin-file-progress@workspace:."
   dependencies:
     "@types/jest": ^26.0.10
-    "@types/node": ^14.0.27
+    "@types/node": ^14.6.0
     chalk: ^4.1.0
     eslint: ^7.7.0
-    eslint-config-pegasus: ^1.3.1
+    eslint-config-pegasus: ^1.3.6
     husky: ^4.2.5
     jest: ^26.4.0
     ora: ^5.0.0

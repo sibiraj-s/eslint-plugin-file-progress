@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "@types/node",
-        "npm:14.0.27"
+        "npm:14.6.0"
       ],
       [
         "chalk",
@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "eslint-config-pegasus",
-        "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"
+        "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.6"
       ],
       [
         "husky",
@@ -74,10 +74,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@types/jest", "npm:26.0.10"],
-            ["@types/node", "npm:14.0.27"],
+            ["@types/node", "npm:14.6.0"],
             ["chalk", "npm:4.1.0"],
             ["eslint", "npm:7.7.0"],
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.6"],
             ["husky", "npm:4.2.5"],
             ["jest", "npm:26.4.0"],
             ["ora", "npm:5.0.0"],
@@ -877,6 +877,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.0.27-d33df6dc81-54ecf408eb.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.0.27"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:14.6.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.6.0-3b4a148c02-ff23553ab7.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2152,10 +2159,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint-config-pegasus", [
-        ["virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-pegasus-virtual-217eadcc58/0/cache/eslint-config-pegasus-npm-1.3.1-8be9d062f1-28ee67f851.zip/node_modules/eslint-config-pegasus/",
+        ["virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.6", {
+          "packageLocation": "./.yarn/$$virtual/eslint-config-pegasus-virtual-71a5a3c81c/0/cache/eslint-config-pegasus-npm-1.3.6-742af3bdec-a9512f03c7.zip/node_modules/eslint-config-pegasus/",
           "packageDependencies": [
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.6"],
             ["confusing-browser-globals", "npm:1.0.9"],
             ["eslint", "npm:7.7.0"]
           ],
@@ -2171,10 +2178,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-plugin-file-progress", "workspace:."],
             ["@types/jest", "npm:26.0.10"],
-            ["@types/node", "npm:14.0.27"],
+            ["@types/node", "npm:14.6.0"],
             ["chalk", "npm:4.1.0"],
             ["eslint", "npm:7.7.0"],
-            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.1"],
+            ["eslint-config-pegasus", "virtual:b257880b95fb38bf3c1d561319f11fe4611348dd22730a3ecbe5675dd58c5a7384364202bb3ae0c35c25f7a28eff2c1095c97afe59c855085b2c0edb1ab12aae#npm:1.3.6"],
             ["husky", "npm:4.2.5"],
             ["jest", "npm:26.4.0"],
             ["ora", "npm:5.0.0"],
