@@ -210,4 +210,4 @@ $RECYCLE.BIN/
 # to regenerate them between each branch switch.
 # Uncomment the following lines if you're not using Zero-Installs:
 .yarn/cache
-# .pnp.*
+.pnp.*
