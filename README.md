@@ -30,6 +30,6 @@ rules:
 
 ### Demo
 
-Who likes a silent console ¯\\\_(ツ)_/¯ 
+Who likes a silent console ¯\\\_(ツ)\_/¯
 
 ![Progress](assets/progress.gif)
