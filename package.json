@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-file-progress",
   "description": "Eslint plugin to print file progress",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "author": "sibiraj-s",
   "repository": "https://github.com/sibiraj-s/eslint-plugin-file-progress.git",
@@ -21,7 +21,6 @@
   ],
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
-    "prepublishOnly": "yarn test",
     "test": "jest"
   },
   "peerDependencies": {

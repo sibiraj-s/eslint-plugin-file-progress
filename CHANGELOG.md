@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.1.1 (2020-12-13)
+
+#### Internal
+
+- update LICENSE ([d3a365e](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/d3a365e))
+
 ## v1.1.0 (2020-08-10)
 
 #### Enhancements
