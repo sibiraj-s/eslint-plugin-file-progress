@@ -14,6 +14,17 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.2.0 (2021-10-18)
+
+#### Features
+
+- support eslint v8 ([46e1e38](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/46e1e38))
+
+#### Internal
+
+- migrate to npm from yarn ([09c2da9](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/09c2da9))
+- remove jest ([7fd164e](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/7fd164e))
+
 ## v1.1.1 (2020-12-13)
 
 #### Internal
