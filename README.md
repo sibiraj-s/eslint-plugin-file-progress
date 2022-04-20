@@ -28,6 +28,27 @@ rules:
   file-progress/activate: 1
 ```
 
+
+#### Only on CLI
+
+Some eslint plugins for code editors may conflict with this plugin rule (or, in that context, a file progress is not relevant), so you can use it [in your CLI command directly](https://eslint.org/docs/user-guide/command-line-interface#specifying-rules-and-plugins):
+
+```
+npx eslint --plugin file-progress --rule 'file-progress/activate: 1' ./packages
+```
+
+Or, in your package.json's command:
+
+```diff
+{
+  "scripts: [
+-    "lint": "eslint ./packages/"
++    "lint": "eslint --plugin file-progress --rule \"file-progress/activate: 1\" ./packages"
+  ]
+}
+```
+
+
 ### Demo
 
 Who likes a silent console ¯\\\_(ツ)\_/¯
