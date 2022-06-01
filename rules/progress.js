@@ -1,5 +1,6 @@
 const ora = require('ora');
 const chalk = require('chalk');
+const path = require('path');
 
 const spinner = ora({
   spinner: 'line',
@@ -22,7 +23,8 @@ const create = (context) => {
   }
 
   const filename = context.getFilename();
-  const relativeFilePath = filename.replace(rootPath, '');
+
+  const relativeFilePath = path.relative(rootPath, filename);
 
   spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
   spinner.render();
