@@ -1,6 +1,6 @@
+const path = require('path');
 const ora = require('ora');
 const chalk = require('chalk');
-const path = require('path');
 
 const spinner = ora({
   spinner: 'line',
@@ -14,7 +14,7 @@ const exitCallback = (exitCode) => {
   }
 };
 
-const rootPath = `${process.cwd()}/`;
+const rootPath = process.cwd();
 
 const create = (context) => {
   if (!bindExit) {
@@ -23,7 +23,6 @@ const create = (context) => {
   }
 
   const filename = context.getFilename();
-
   const relativeFilePath = path.relative(rootPath, filename);
 
   spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
