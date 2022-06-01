@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.2.1 (2022-06-01)
+
+#### Bug Fixes
+
+- fix relative file path in windows ([9ebefd6](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/9ebefd6))
+
 ## v1.2.0 (2021-10-18)
 
 #### Features
