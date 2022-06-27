@@ -11,8 +11,10 @@ ruleTester.run(ruleName, progress, {
     {
       code: 'var foo = \'bar\'',
       settings: {
-        'hide-progress': true,
-        'success-message': 'API lint done...',
+        progress: {
+          hide: false,
+          successMessage: 'Lint done...',
+        },
       },
     },
   ],
