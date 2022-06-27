@@ -32,12 +32,12 @@
     "ora": "^5.4.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@types/node": "^16.11.38",
-    "eslint": "^8.16.0",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/node": "^16.11.41",
+    "eslint": "^8.18.0",
     "eslint-config-pegasus": "^3.3.0",
-    "eslint-plugin-eslint-plugin": "^4.2.0",
+    "eslint-plugin-eslint-plugin": "^4.3.0",
     "eslint-plugin-file-progress": "file:.",
     "husky": "^8.0.1",
     "is-ci": "^3.0.1"
