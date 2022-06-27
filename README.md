@@ -38,3 +38,11 @@ settings:
 Who likes a silent console ¯\\\_(ツ)\_/¯
 
 ![Progress](assets/progress.gif)
+
+### Enable/disable progress via CLI
+
+```bash
+npx eslint . --rule 'file-progress/activate: 0'
+```
+
+Use `file-progress/activate: 1` to enable the plugin. See https://eslint.org/docs/latest/user-guide/command-line-interface for more details on how to use CLI
