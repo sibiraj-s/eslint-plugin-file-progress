@@ -26,6 +26,11 @@ plugins:
 
 rules:
   file-progress/activate: 1
+settings:
+  progress:
+    hide-progress: false
+    success-message: "Lint done..."
+    fail-message: "Lint done with errors."
 ```
 
 ### Demo
