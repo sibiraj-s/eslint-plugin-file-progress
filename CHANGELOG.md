@@ -14,6 +14,17 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.3.0 (2022-06-27)
+
+#### Features
+
+- add option to hide progress ([21ae39a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/21ae39a))
+- add option to configure sucess message ([21ae39a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/21ae39a))
+
+#### Bug Fixes
+
+- print path relative to eslint project ([9c4600d](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/9c4600d))
+
 ## v1.2.1 (2022-06-01)
 
 #### Bug Fixes
