@@ -9,23 +9,16 @@ const spinner = ora({
 let bindExit = false;
 let initialReportDone = false;
 
+const rootPath = process.cwd();
+
 const exitCallback = (exitCode, settings) => {
   if (exitCode === 0) {
-    spinner.succeed(
-      settings && typeof settings['success-message'] === 'string'
-        ? settings['success-message']
-        : 'Lint done...',
-    );
-  } else {
-    spinner.fail(
-      settings && typeof settings['fail-message'] === 'string'
-        ? settings['fail-message']
-        : 'Lint done with errors.',
-    );
+    const successMessage = typeof settings['success-message'] === 'string'
+      ? settings['success-message']
+      : 'Lint done...';
+    spinner.succeed(successMessage);
   }
 };
-
-const rootPath = process.cwd();
 
 const create = (context) => {
   if (!bindExit) {
@@ -38,15 +31,13 @@ const create = (context) => {
   if (!context.settings['hide-progress']) {
     const filename = context.getFilename();
     const relativeFilePath = path.relative(rootPath, filename);
-
     spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
-    spinner.render();
   } else if (!initialReportDone) {
     spinner.text = 'Linting \n';
-    spinner.render();
     initialReportDone = true;
   }
 
+  spinner.render();
   return {};
 };
 

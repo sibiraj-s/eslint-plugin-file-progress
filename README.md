@@ -30,7 +30,6 @@ settings:
   progress:
     hide-progress: false
     success-message: "Lint done..."
-    fail-message: "Lint done with errors."
 ```
 
 ### Demo
