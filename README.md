@@ -26,6 +26,7 @@ plugins:
 
 rules:
   file-progress/activate: 1
+
 settings:
   progress:
     hide-progress: false
