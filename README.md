@@ -52,7 +52,7 @@ Or, in your package.json's command:
 ```diff
 {
   "scripts: [
--    "lint": "eslint ./packages/"
+-    "lint": "eslint ."
 +    "lint": "eslint . --plugin file-progress --rule \"file-progress/activate: 1\""
   ]
 }
