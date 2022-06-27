@@ -33,13 +33,18 @@ settings:
     successMessage: "Lint done..."
 ```
 
+### Demo
 
-#### Only on CLI
+Who likes a silent console ¯\\\_(ツ)\_/¯
 
-Some eslint plugins for code editors may conflict with this plugin rule (or, in that context, a file progress is not relevant), so you can use it [in your CLI command directly](https://eslint.org/docs/user-guide/command-line-interface#specifying-rules-and-plugins):
+![Progress](assets/progress.gif)
 
-```
-npx eslint --plugin file-progress --rule 'file-progress/activate: 1' ./packages
+### Only on CLI
+
+Some eslint plugins for code editors may conflict with this plugin rule (or, in that context, a file progress is not relevant)
+
+```bash
+npx eslint . --plugin file-progress --rule 'file-progress/activate: 1'
 ```
 
 Or, in your package.json's command:
@@ -48,22 +53,9 @@ Or, in your package.json's command:
 {
   "scripts: [
 -    "lint": "eslint ./packages/"
-+    "lint": "eslint --plugin file-progress --rule \"file-progress/activate: 1\" ./packages"
++    "lint": "eslint . --plugin file-progress --rule \"file-progress/activate: 1\""
   ]
 }
 ```
 
-
-### Demo
-
-Who likes a silent console ¯\\\_(ツ)\_/¯
-
-![Progress](assets/progress.gif)
-
-### Enable/disable progress via CLI
-
-```bash
-npx eslint . --rule 'file-progress/activate: 0'
-```
-
-Use `file-progress/activate: 1` to enable the plugin. See https://eslint.org/docs/latest/user-guide/command-line-interface for more details on how to use CLI
+Use `file-progress/activate: 0` to disable the plugin. See https://eslint.org/docs/latest/user-guide/command-line-interface#specifying-rules-and-plugins for more details on how to use CLI
