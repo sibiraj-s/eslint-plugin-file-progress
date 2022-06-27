@@ -14,8 +14,6 @@ const defaultSettings = {
   successMessage: 'Lint done.',
 };
 
-const rootPath = process.cwd();
-
 const exitCallback = (exitCode, settings) => {
   if (exitCode === 0) {
     spinner.succeed(settings.successMessage);
@@ -34,7 +32,7 @@ const create = (context) => {
 
   if (!settings.hide) {
     const filename = context.getFilename();
-    const relativeFilePath = path.relative(rootPath, filename);
+    const relativeFilePath = path.relative(context.getCwd(), filename);
     spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
   } else if (!initialReportDone) {
     spinner.text = 'Linting...\n';
