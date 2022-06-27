@@ -9,31 +9,35 @@ const spinner = ora({
 let bindExit = false;
 let initialReportDone = false;
 
+const defaultSettings = {
+  hide: false,
+  successMessage: 'Lint done.',
+};
+
 const rootPath = process.cwd();
 
 const exitCallback = (exitCode, settings) => {
   if (exitCode === 0) {
-    const successMessage = typeof settings['success-message'] === 'string'
-      ? settings['success-message']
-      : 'Lint done...';
-    spinner.succeed(successMessage);
+    spinner.succeed(settings.successMessage);
   }
 };
 
 const create = (context) => {
+  const settings = { ...defaultSettings, ...context.settings.progress };
+
   if (!bindExit) {
     process.on('exit', (code) => {
-      exitCallback(code, context.settings);
+      exitCallback(code, settings);
     });
     bindExit = true;
   }
 
-  if (!context.settings['hide-progress']) {
+  if (!settings.hide) {
     const filename = context.getFilename();
     const relativeFilePath = path.relative(rootPath, filename);
     spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
   } else if (!initialReportDone) {
-    spinner.text = 'Linting \n';
+    spinner.text = 'Linting...\n';
     initialReportDone = true;
   }
 

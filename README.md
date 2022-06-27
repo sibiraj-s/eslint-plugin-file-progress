@@ -29,8 +29,8 @@ rules:
 
 settings:
   progress:
-    hide-progress: false
-    success-message: "Lint done..."
+    hide: false # hides the progress with spinner. Print's a static `Linting...` text
+    successMessage: "Lint done..."
 ```
 
 ### Demo
