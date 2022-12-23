@@ -3,11 +3,7 @@ extends:
   - plugin:eslint-plugin/recommended
 
 plugins:
-  - file-progress
   - eslint-plugin
-
-rules:
-  file-progress/activate: 1
 
 env:
   node: true
