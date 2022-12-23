@@ -9,10 +9,11 @@
   "homepage": "https://github.com/sibiraj-s/eslint-plugin-file-progress#readme",
   "main": "index.js",
   "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
     "eslint-plugin-file-progress",
     "eslint-progress",
-    "eslint-plugin",
-    "eslint",
     "progress"
   ],
   "files": [
