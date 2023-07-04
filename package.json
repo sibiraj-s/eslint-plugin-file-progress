@@ -40,6 +40,7 @@
     "eslint-config-pegasus": "^4.0.0",
     "eslint-plugin-eslint-plugin": "^5.1.0",
     "husky": "^8.0.3",
-    "is-ci": "^3.0.1"
+    "is-ci": "^3.0.1",
+    "publint": "^0.1.15"
   }
 }
