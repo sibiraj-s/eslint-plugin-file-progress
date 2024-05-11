@@ -14,6 +14,12 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.4.0 (2024-05-11)
+
+#### Features
+
+- support eslint v9 ([dd74d77](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/dd74d77))
+
 ## v1.3.0 (2022-06-27)
 
 #### Features

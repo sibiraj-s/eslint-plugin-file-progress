@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-file-progress",
   "description": "Eslint plugin to print file progress",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "license": "MIT",
   "author": "sibiraj-s",
   "repository": "https://github.com/sibiraj-s/eslint-plugin-file-progress.git",
