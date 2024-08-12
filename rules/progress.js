@@ -1,9 +1,10 @@
 const path = require('path');
-const ora = require('ora');
-const chalk = require('chalk');
+const { createSpinner } = require('nanospinner');
+const pc = require('picocolors');
 
-const spinner = ora({
-  spinner: 'line',
+const spinner = createSpinner('', {
+  frames: ['|', '/', '-', '\\'],
+  color: 'cyan',
 });
 
 let bindExit = false;
@@ -16,7 +17,7 @@ const defaultSettings = {
 
 const exitCallback = (exitCode, settings) => {
   if (exitCode === 0) {
-    spinner.succeed(settings.successMessage);
+    spinner.success({ text: settings.successMessage });
   }
 };
 
@@ -33,13 +34,13 @@ const create = (context) => {
   if (!settings.hide) {
     const filename = context.getFilename();
     const relativeFilePath = path.relative(context.getCwd(), filename);
-    spinner.text = `Processing: ${chalk.green(relativeFilePath)} \n`;
+    spinner.update({ text: `Processing: ${pc.green(relativeFilePath)} \n` });
   } else if (!initialReportDone) {
-    spinner.text = 'Linting...\n';
+    spinner.update({ text: 'Linting...\n' });
     initialReportDone = true;
   }
 
-  spinner.render();
+  spinner.spin();
   return {};
 };
 
