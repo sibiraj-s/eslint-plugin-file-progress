@@ -14,6 +14,13 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v1.5.0 (2024-08-12)
+
+- replace `ora` with `nanospinner` ([96c5ccc](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/96c5ccc))
+- replace `chalk` with `picocolors` ([96c5ccc](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/96c5ccc))
+
+#### Dependency Updates
+
 ## v1.4.0 (2024-05-11)
 
 #### Features
