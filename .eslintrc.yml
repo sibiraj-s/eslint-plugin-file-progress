@@ -1,9 +1,0 @@
-extends:
-  - pegasus
-  - plugin:eslint-plugin/recommended
-
-plugins:
-  - eslint-plugin
-
-env:
-  node: true

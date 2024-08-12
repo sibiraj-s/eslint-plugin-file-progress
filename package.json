@@ -21,9 +21,9 @@
     "rules/"
   ],
   "scripts": {
-    "lint": "eslint . --ignore-path .gitignore",
+    "lint": "eslint .",
     "test": "node test.js",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky"
   },
   "peerDependencies": {
     "eslint": "^7.0.0 || ^8.0.0 || ^9.0.0"
@@ -33,14 +33,14 @@
     "picocolors": "^1.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@types/node": "^20.12.11",
-    "eslint": "^8.57.0",
-    "eslint-config-pegasus": "^5.0.0",
-    "eslint-plugin-eslint-plugin": "^6.1.0",
-    "husky": "^9.0.11",
+    "@types/node": "^20.14.15",
+    "eslint": "^9.9.0",
+    "eslint-config-pegasus": "^6.0.0-beta.2",
+    "eslint-plugin-eslint-plugin": "^6.2.0",
+    "husky": "^9.1.4",
     "is-ci": "^3.0.1",
-    "publint": "^0.2.7"
+    "publint": "^0.2.9"
   }
 }
