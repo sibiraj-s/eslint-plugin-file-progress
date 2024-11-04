@@ -13,7 +13,7 @@ const plugin = {
 
 const configs = {
   recommended: {
-    name: 'recommended',
+    name: 'eslint-plugin-file-progress/recommended',
     plugins: {
       progress: plugin
     },
@@ -22,7 +22,7 @@ const configs = {
     }
   },
   noCI: {
-    name: 'no-ci',
+    name: 'eslint-plugin-file-progress/no-ci',
     plugins: {
       progress: plugin
     },
