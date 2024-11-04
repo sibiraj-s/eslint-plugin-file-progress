@@ -6,7 +6,8 @@ declare const plugin: {
     version: string;
   };
   configs: {
-    recommended: Linter.Config
+    recommended: Linter.Config;
+    noCI: Linter.Config;
   };
   rules: {
     activate: Rule.RuleModule;
