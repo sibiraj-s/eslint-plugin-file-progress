@@ -1,6 +1,6 @@
-const { RuleTester } = require('eslint');
+import { RuleTester } from 'eslint';
 
-const progress = require('./rules/progress');
+import progress from './rules/progress.js';
 
 const ruleTester = new RuleTester();
 const ruleName = 'file-progress/activate';
