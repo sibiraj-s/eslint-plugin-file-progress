@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.0 (2024-11-04)
+
+- require eslint v9 ([e593243](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/e593243))
+
 ## v1.5.0 (2024-08-12)
 
 - replace `ora` with `nanospinner` ([96c5ccc](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/96c5ccc))
