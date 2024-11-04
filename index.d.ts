@@ -13,5 +13,4 @@ declare const plugin: {
   };
 };
 
-export const recommended: Linter.Config;
-export = plugin;
+export default plugin;
