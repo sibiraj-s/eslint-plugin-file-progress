@@ -18,19 +18,24 @@ yarn add --dev eslint-plugin-file-progress
 
 ### Usage
 
-```yml
-# .eslintrc.yml
+```js
+// eslint.config.js
 
-plugins:
-  - file-progress
-
-rules:
-  file-progress/activate: 1
-
-settings:
-  progress:
-    hide: false # hides the progress with spinner. Print's a static `Linting...` text
-    successMessage: "Lint done..."
+{
+  name: 'progress',
+  plugins: {
+    progress
+  },
+  rules: {
+    "progress/activate": 1
+  },
+  settings: {
+    progress: {
+      hide: false,
+      successMessage: "Lint done..."
+    }
+  }
+}
 ```
 
 ### Demo

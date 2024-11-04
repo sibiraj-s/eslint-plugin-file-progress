@@ -1,8 +1,8 @@
-const path = require('path');
-const { createSpinner } = require('nanospinner');
-const pc = require('picocolors');
+import path from 'node:path';
+import nanospinner from 'nanospinner';
+import pc from 'picocolors';
 
-const spinner = createSpinner('', {
+const spinner = nanospinner.createSpinner('', {
   frames: ['|', '/', '-', '\\'],
   color: 'cyan',
 });
@@ -45,8 +45,20 @@ const create = (context) => {
 };
 
 const progress = {
-  name: __filename,
+  name: import.meta.filename,
+  meta: {
+    type: 'suggestion',
+    messages: [],
+    schema: [
+      {
+        oneOf: [
+          { type: 'string', enum: ['0', '1', 'off'] },
+          { type: 'number', enum: [0, 1] }
+        ]
+      }
+    ]
+  },
   create,
 };
 
-module.exports = progress;
+export default progress;
