@@ -30,7 +30,7 @@
     "prepare": "is-ci || husky"
   },
   "engines": {
-    "node": ">=20.11.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
