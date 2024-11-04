@@ -1,14 +1,17 @@
-import type { Rule } from 'eslint';
-
-export = plugin;
+import type { Linter, Rule } from 'eslint';
 
 declare const plugin: {
   meta: {
     name: string;
     version: string;
   };
-  configs: {};
+  configs: {
+    recommended: Linter.Config
+  };
   rules: {
     activate: Rule.RuleModule;
   };
 };
+
+export const recommended: Linter.Config;
+export = plugin;

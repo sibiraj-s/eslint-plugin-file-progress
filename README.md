@@ -31,12 +31,36 @@ yarn add --dev eslint-plugin-file-progress
   },
   settings: {
     progress: {
-      hide: false,
+      hide: false, // use this to hide the progress message, can be useful in CI
       successMessage: "Lint done..."
     }
   }
 }
 ```
+
+Or use the recommended config
+
+```js
+// eslint.config.js
+import progress from 'eslint-plugin-file-progress'
+
+export default [
+  progress.configs.recommended
+]
+```
+
+or if you want to hide the progress message in CI
+
+```js
+// eslint.config.js
+import progress from 'eslint-plugin-file-progress'
+
+export default [
+  progress.configs.noCI
+]
+```
+
+CI is detected by checking if the `CI` environment variable is set to `true`.
 
 ### Demo
 

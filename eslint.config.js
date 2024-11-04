@@ -7,19 +7,5 @@ export default [
   eslintPlugin.configs['flat/recommended'],
   pegasus.configs.default,
   pegasus.configs.node,
-  {
-    name: 'progress',
-    plugins: {
-      progress
-    },
-    rules: {
-      "progress/activate": 1
-    },
-    settings: {
-      progress: {
-        hide: false,
-        successMessage: "Lint done..."
-      }
-    }
-  }
+  progress.configs.recommended
 ]

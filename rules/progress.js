@@ -49,14 +49,7 @@ const progress = {
   meta: {
     type: 'suggestion',
     messages: [],
-    schema: [
-      {
-        oneOf: [
-          { type: 'string', enum: ['0', '1', 'off'] },
-          { type: 'number', enum: [0, 1] }
-        ]
-      }
-    ]
+    schema: []
   },
   create,
 };

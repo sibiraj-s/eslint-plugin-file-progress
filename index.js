@@ -11,4 +11,32 @@ const plugin = {
   },
 };
 
+const configs = {
+  recommended: {
+    name: 'recommended',
+    plugins: {
+      progress: plugin
+    },
+    rules: {
+      "progress/activate": 2
+    }
+  },
+  noCI: {
+    name: 'no-ci',
+    plugins: {
+      progress: plugin
+    },
+    rules: {
+      "progress/activate": 2
+    },
+    settings: {
+      progress: {
+        hide: process.env.CI === 'true'
+      }
+    }
+  }
+}
+
+Object.assign(plugin.configs, configs)
+
 export default plugin
