@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.0.1 (2024-11-04)
+
+- fix supported nodejs version range for eslint ([66e6b0b](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/66e6b0b))
+
 ## v2.0.0 (2024-11-04)
 
 - require eslint v9 ([e593243](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/e593243))
