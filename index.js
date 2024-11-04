@@ -21,8 +21,8 @@ const configs = {
       "progress/activate": 2
     }
   },
-  noCI: {
-    name: 'progress/no-ci',
+  'recommended-ci': {
+    name: 'progress/recommended-ci',
     plugins: {
       progress: plugin
     },

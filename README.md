@@ -56,11 +56,13 @@ or if you want to hide the progress message in CI
 import progress from 'eslint-plugin-file-progress'
 
 export default [
-  progress.configs.noCI
+  progress.configs['recommended-ci']
 ]
 ```
 
-CI is detected by checking if the `CI` environment variable is set to `true`.
+This configuration is similar to the recommended one, but it automatically detects CI environments by checking if the `CI` environment variable is set to `true`, and hides the progress message accordingly.
+
+For CI's where CI is not set to `true`, you can use the `settings.progress.hide` option to hide the progress message.
 
 ### Demo
 

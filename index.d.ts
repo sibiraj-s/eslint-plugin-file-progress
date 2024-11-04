@@ -7,7 +7,7 @@ declare const plugin: {
   };
   configs: {
     recommended: Linter.Config;
-    noCI: Linter.Config;
+    'recommended-ci': Linter.Config;
   };
   rules: {
     activate: Rule.RuleModule;
