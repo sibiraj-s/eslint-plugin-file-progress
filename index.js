@@ -3,7 +3,7 @@ import progress from './rules/progress.js';
 const plugin = {
   meta: {
     name: "eslint-plugin-file-progress",
-    version: "2.1.1"
+    version: "2.1.2"
   },
   configs: {},
   rules: {

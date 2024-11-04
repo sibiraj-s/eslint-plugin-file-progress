@@ -14,6 +14,11 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.1.2 (2024-11-04)
+
+- fix namespace for configuration presets ([cdf1726](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/cdf1726))
+- fix `noCI` type not exported ([50825d2](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/50825d2))
+
 ## v2.1.0 (2024-11-04)
 
 - add `recommended` and `noCI` configs ([5a581b6](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/5a581b6))
