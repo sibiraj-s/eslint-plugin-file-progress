@@ -13,7 +13,7 @@ const plugin = {
 
 const configs = {
   recommended: {
-    name: 'recommended',
+    name: 'progress/recommended',
     plugins: {
       progress: plugin
     },
@@ -22,7 +22,7 @@ const configs = {
     }
   },
   noCI: {
-    name: 'no-ci',
+    name: 'progress/no-ci',
     plugins: {
       progress: plugin
     },
