@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v2.1.0 (2024-11-04)
+
+- add `recommended` and `noCI` configs ([5a581b6](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/5a581b6))
+
 ## v2.0.1 (2024-11-04)
 
 - fix supported nodejs version range for eslint ([66e6b0b](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/66e6b0b))
