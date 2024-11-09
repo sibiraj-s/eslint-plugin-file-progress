@@ -12,6 +12,7 @@ let initialReportDone = false;
 
 const defaultSettings = {
   hide: false,
+  hideFileName: false,
   successMessage: 'Lint done.',
 };
 
@@ -31,7 +32,11 @@ const create = (context) => {
     bindExit = true;
   }
 
-  if (!settings.hide) {
+  if (settings.hide) {
+    return {};
+  }
+
+  if (!settings.hideFileName) {
     const filename = context.getFilename();
     const relativeFilePath = path.relative(context.getCwd(), filename);
     spinner.update({ text: `Processing: ${pc.green(relativeFilePath)} \n` });

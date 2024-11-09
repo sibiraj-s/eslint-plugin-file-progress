@@ -32,6 +32,7 @@ yarn add --dev eslint-plugin-file-progress
   settings: {
     progress: {
       hide: false, // use this to hide the progress message, can be useful in CI
+      hideFileName: false, // use this to hide the file name, would simply show "Linting..."
       successMessage: "Lint done..."
     }
   }
