@@ -14,6 +14,11 @@ All notable changes to this project will be documented in this file.
 > - Internal
 > - Unreleased
 
+## v3.0.1 (2024-11-09)
+
+- fix `hide` option to hide the progress message ([4228208](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/4228208))
+- add `hideFileName` option to hide the file name during linting ([4228208](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/4228208))
+
 ## v3.0.0 (2024-11-04)
 
 - rename `noCI` config to `recommended-ci` ([f67c68a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/f67c68a))
