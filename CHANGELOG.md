@@ -4,54 +4,50 @@
 
 ### Patch Changes
 
-- a862c88: hide status on exit with hide config option
-
-All notable changes to this project will be documented in this file.
-
-> **Tags**
->
-> - Features
-> - Bug Fixes
-> - Performance Improvements
-> - Enhancements
-> - Dependency Updates
-> - Breaking Changes
-> - Documentation
-> - Internal
-> - Unreleased
+- fd02a52: hide status on exit with hide config option
 
 ## v3.0.1 (2024-11-09)
+
+### Patch Changes
 
 - fix `hide` option to hide the progress message ([4228208](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/4228208))
 - add `hideFileName` option to hide the file name during linting ([4228208](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/4228208))
 
 ## v3.0.0 (2024-11-04)
 
+### Breaking Changes
+
 - rename `noCI` config to `recommended-ci` ([f67c68a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/f67c68a))
 
 ## v2.1.2 (2024-11-04)
 
+### Patch Changes
 - fix namespace for configuration presets ([cdf1726](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/cdf1726))
 - fix `noCI` type not exported ([50825d2](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/50825d2))
 
 ## v2.1.0 (2024-11-04)
 
+### Features
 - add `recommended` and `noCI` configs ([5a581b6](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/5a581b6))
 
 ## v2.0.1 (2024-11-04)
+
+### Patch Changes
 
 - fix supported nodejs version range for eslint ([66e6b0b](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/66e6b0b))
 
 ## v2.0.0 (2024-11-04)
 
+### Breaking Changes
+
 - require eslint v9 ([e593243](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/e593243))
 
 ## v1.5.0 (2024-08-12)
 
+#### Dependency Updates
+
 - replace `ora` with `nanospinner` ([96c5ccc](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/96c5ccc))
 - replace `chalk` with `picocolors` ([96c5ccc](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/96c5ccc))
-
-#### Dependency Updates
 
 ## v1.4.0 (2024-05-11)
 
