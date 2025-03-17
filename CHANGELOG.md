@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 3.0.2
+
+### Patch Changes
+
+- a862c88: hide status on exit with hide config option
+
 All notable changes to this project will be documented in this file.
 
 > **Tags**
