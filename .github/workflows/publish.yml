@@ -1,38 +1,44 @@
-name: Publish to NPM
+name: Release
 
 on:
   push:
-    tags: v*
+    branches:
+      - master
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 env:
   NODE_VERSION: 22
+  HUSKY: 0
 
 jobs:
-  publish:
-    name: Publish
+  release:
+    name: Release
     runs-on: ubuntu-latest
-
     permissions:
-      contents: read
+      contents: write
+      pull-requests: write
       id-token: write
-
     steps:
-      - name: Checkout
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ env.NODE_VERSION }}
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          registry-url: "https://registry.npmjs.org"
-          cache: npm
 
       - name: Install Dependencies
         run: npm ci
 
-      - name: Run Tests
-        run: npm run test
+      - name: Build
+        run: npm run build
 
-      - run: npm publish --provenance
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: npx changeset publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

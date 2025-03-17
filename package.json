@@ -19,6 +19,9 @@
     "eslint-progress",
     "progress"
   ],
+  "publishConfig": {
+    "provenance": true
+  },
   "files": [
     "index.js",
     "index.d.ts",
@@ -40,6 +43,7 @@
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.28.1",
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
     "@types/node": "^22.13.10",
