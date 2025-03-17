@@ -62,7 +62,7 @@
 #### Features
 
 - add option to hide progress ([21ae39a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/21ae39a))
-- add option to configure sucess message ([21ae39a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/21ae39a))
+- add option to configure success message ([21ae39a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/21ae39a))
 
 #### Bug Fixes
 
