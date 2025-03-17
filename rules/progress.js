@@ -17,7 +17,7 @@ const defaultSettings = {
 };
 
 const exitCallback = (exitCode, settings) => {
-  if (exitCode === 0) {
+  if (exitCode === 0 && settings.hide !== true) {
     spinner.success({ text: settings.successMessage });
   }
 };
