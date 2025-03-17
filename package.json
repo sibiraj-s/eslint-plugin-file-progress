@@ -20,7 +20,8 @@
     "progress"
   ],
   "publishConfig": {
-    "provenance": true
+    "provenance": true,
+    "access": "public"
   },
   "files": [
     "index.js",
