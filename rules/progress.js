@@ -37,8 +37,8 @@ const create = (context) => {
   }
 
   if (!settings.hideFileName) {
-    const filename = context.getFilename();
-    const relativeFilePath = path.relative(context.getCwd(), filename);
+    const filename = context.filename ?? context.getFilename();
+    const relativeFilePath = path.relative(context.cwd ?? context.getCwd(), filename);
     spinner.update({ text: `Processing: ${pc.green(relativeFilePath)} \n` });
   } else if (!initialReportDone) {
     spinner.update({ text: 'Linting...\n' });

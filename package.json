@@ -37,7 +37,7 @@
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.0.0 || ^10.0.0"
   },
   "dependencies": {
     "nanospinner": "^1.2.0",
