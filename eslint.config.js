@@ -4,7 +4,7 @@ import eslintPlugin from 'eslint-plugin-eslint-plugin'
 import progress from './index.js'
 
 export default [
-  eslintPlugin.configs['flat/recommended'],
+  eslintPlugin.configs.recommended,
   pegasus.configs.default,
   pegasus.configs.node,
   progress.configs.recommended
