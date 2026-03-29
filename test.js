@@ -7,9 +7,9 @@ const ruleName = 'file-progress/activate';
 
 ruleTester.run(ruleName, progress, {
   valid: [
-    'var foo = \'bar\'',
+    "var foo = 'bar'",
     {
-      code: 'var foo = \'bar\'',
+      code: "var foo = 'bar'",
       settings: {
         progress: {
           hide: false,

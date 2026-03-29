@@ -43,22 +43,18 @@ Or use the recommended config
 
 ```js
 // eslint.config.js
-import progress from 'eslint-plugin-file-progress'
+import progress from 'eslint-plugin-file-progress';
 
-export default [
-  progress.configs.recommended
-]
+export default [progress.configs.recommended];
 ```
 
 or if you want to hide the progress message in CI
 
 ```js
 // eslint.config.js
-import progress from 'eslint-plugin-file-progress'
+import progress from 'eslint-plugin-file-progress';
 
-export default [
-  progress.configs['recommended-ci']
-]
+export default [progress.configs['recommended-ci']];
 ```
 
 This configuration is similar to the recommended one, but it automatically detects CI environments by checking if the `CI` environment variable is set to `true`, and hides the progress message accordingly.

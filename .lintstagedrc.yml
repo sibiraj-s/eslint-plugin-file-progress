@@ -1,0 +1,1 @@
+'*.{js,ts,yml,html,yaml,json,yml,md}': oxfmt --write

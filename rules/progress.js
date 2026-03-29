@@ -16,13 +16,22 @@ const getActivePids = () => {
   }
   return entries.filter((entry) => {
     const pid = Number(entry);
-    if (!pid) {return false};
+    if (!pid) {
+      return false;
+    }
     try {
       process.kill(pid, 0);
       return true;
     } catch (e) {
-      if (e.code === 'EPERM') {return true}; // process exists, no permission to signal
-      try { fs.unlinkSync(path.join(REGISTRY_DIR, entry)); } catch { /* ignore */ }
+      if (e.code === 'EPERM') {
+        return true;
+      }
+      // process exists, no permission to signal
+      try {
+        fs.unlinkSync(path.join(REGISTRY_DIR, entry));
+      } catch {
+        /* ignore */
+      }
       return false; // ESRCH = dead process, stale file removed
     }
   });
@@ -33,16 +42,26 @@ const register = () => {
   try {
     fs.mkdirSync(REGISTRY_DIR, { recursive: true });
     fs.writeFileSync(PID_FILE, '');
-  } catch { /* ignore */ }
+  } catch {
+    /* ignore */
+  }
   return getActivePids().length > 1;
 };
 
 // Deregister this process. Returns true if this was the last active process.
 const deregister = () => {
-  try { fs.unlinkSync(PID_FILE); } catch { /* ignore */ }
+  try {
+    fs.unlinkSync(PID_FILE);
+  } catch {
+    /* ignore */
+  }
   const remaining = getActivePids();
   if (remaining.length === 0) {
-    try { fs.rmdirSync(REGISTRY_DIR); } catch { /* ignore ENOTEMPTY race */ }
+    try {
+      fs.rmdirSync(REGISTRY_DIR);
+    } catch {
+      /* ignore ENOTEMPTY race */
+    }
     return true;
   }
   return false;
@@ -131,7 +150,7 @@ const progress = {
   meta: {
     type: 'suggestion',
     messages: [],
-    schema: []
+    schema: [],
   },
   create,
 };

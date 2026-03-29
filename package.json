@@ -1,43 +1,37 @@
 {
   "name": "eslint-plugin-file-progress",
-  "description": "Eslint plugin to print file progress",
   "version": "4.0.0",
-  "license": "MIT",
-  "author": "sibiraj-s",
-  "repository": "github:sibiraj-s/eslint-plugin-file-progress",
-  "bugs": "https://github.com/sibiraj-s/eslint-plugin-file-progress/issues",
-  "homepage": "https://github.com/sibiraj-s/eslint-plugin-file-progress#readme",
-  "type": "module",
-  "main": "./index.js",
-  "exports": "./index.js",
-  "types": "./index.d.ts",
+  "description": "Eslint plugin to print file progress",
   "keywords": [
     "eslint",
-    "eslintplugin",
     "eslint-plugin",
     "eslint-plugin-file-progress",
     "eslint-progress",
+    "eslintplugin",
     "progress"
   ],
-  "publishConfig": {
-    "provenance": true,
-    "access": "public"
-  },
+  "homepage": "https://github.com/sibiraj-s/eslint-plugin-file-progress#readme",
+  "bugs": "https://github.com/sibiraj-s/eslint-plugin-file-progress/issues",
+  "license": "MIT",
+  "author": "sibiraj-s",
+  "repository": "github:sibiraj-s/eslint-plugin-file-progress",
   "files": [
     "index.js",
     "index.d.ts",
     "rules/"
   ],
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": "./index.js",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "node test.js",
     "prepare": "is-ci || husky"
-  },
-  "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "^10.0.0"
   },
   "dependencies": {
     "nanospinner": "^1.2.2",
@@ -53,6 +47,14 @@
     "eslint-plugin-eslint-plugin": "^7.3.2",
     "husky": "^9.1.7",
     "is-ci": "^4.1.0",
+    "lint-staged": "^16.4.0",
+    "oxfmt": "^0.42.0",
     "publint": "^0.3.18"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
   }
 }
