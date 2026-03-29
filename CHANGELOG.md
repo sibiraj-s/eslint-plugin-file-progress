@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 4.0.0
+
+### Features
+
+- Support eslint v10 ([df89e3d](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/df89e3d))
+
+### Breaking Changes
+
+- Drop eslint v9 support ([0abd9c3](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/0abd9c3))
+
 ## 3.0.2
 
 ### Patch Changes
