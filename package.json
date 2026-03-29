@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-file-progress",
-  "version": "4.0.0",
+  "version": "4.0.0-beta.1",
   "description": "Eslint plugin to print file progress",
   "keywords": [
     "eslint",

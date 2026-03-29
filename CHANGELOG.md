@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 4.0.0-beta.1
+
+### Features
+
+- Support eslint concurrent mode ([06ab37a](https://github.com/sibiraj-s/eslint-plugin-file-progress/commit/06ab37a))
+
 ## 4.0.0
 
 ### Features
