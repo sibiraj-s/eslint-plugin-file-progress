@@ -19,6 +19,9 @@ jobs:
       contents: write
       pull-requests: write
       id-token: write
+    environment:
+      name: npm
+      url: https://npm.im/eslint-plugin-file-progress/access
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v6
@@ -39,4 +42,3 @@ jobs:
           commit: 'release: version package'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
